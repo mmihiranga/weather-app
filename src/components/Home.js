@@ -21,7 +21,7 @@ const Home = () => {
       let cityC = Cities.List[i].CityCode;
       axios
         .get(
-          `http://api.openweathermap.org/data/2.5/group?id=${cityC}&units=metric&appid=7a5a4430b28d2b450b463368d1bc43c6`
+          `https://api.openweathermap.org/data/2.5/group?id=${cityC}&units=metric&appid=7a5a4430b28d2b450b463368d1bc43c6`
         )
         .then((res) => {
           // console.log(res);
